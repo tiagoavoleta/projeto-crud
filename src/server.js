@@ -11,7 +11,7 @@ app.set('views', path.join(__dirname, 'views'))
 app.use(express.static(path.join(__dirname, 'public')))
 
 // habilita server para receber dados via post (formulário)
-app.use(express.urlenconded({ extended: true }))
+app.use(express.urlencoded({ extended: true }))
 
 // rotas
 app.get('/', (req, res) => {
